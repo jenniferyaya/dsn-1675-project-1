@@ -20,7 +20,7 @@ html {
 }
 
 
-/* ---------------settings for small screen at 20em----------------- */
+/* ---------------basic setting for small screen at 20em----------------- */
 
 	html	{
 		line-height: 1.3;
@@ -29,6 +29,7 @@ html {
 body {
 	background-color: #f3eeef;
 	margin: 1em;
+	color: #2d282a;
 }
 
 h1 {
@@ -36,7 +37,24 @@ h1 {
 	font-size: 1.25rem;
 	padding: 2em 0 .5em 0;
 	margin: 0 auto;
+	color: #2d282a;
+
 }
+
+.hi-btn {
+	float: left;
+	margin: 0 0 .73em 0;
+	border: #929496 solid .15em;
+	text-align: center;
+	padding: .35em;
+	text-decoration: none;
+	color: #2d282a;
+}
+
+.hi-btn:hover {
+	background-color: #fff;
+}
+
 
 h2 {
 	padding-top: .75em;
@@ -44,7 +62,7 @@ h2 {
 	margin: 0;
 }
 
-p {
+.p, .intro-p {
 	width: 98%;
 	padding-top: 1em;
 	margin: 0;
@@ -208,7 +226,7 @@ footer {
 		margin-left: 4em;
 	}
 
-	p, img {
+	p, .lrg-img {
 		max-width: 31em;
 	}
 
@@ -225,7 +243,7 @@ footer {
 		margin-left: 7em;
 	}
 
-	img {
+	.lrg-img {
 		width: 100%;
 	}
 
@@ -249,7 +267,7 @@ footer {
 	}
 
 	body {
-		margin: 2em 0 2em 0;
+		margin: 2em;
 	}
 
 	h1 {
@@ -259,22 +277,22 @@ footer {
 
 	h2 {
 		font-size: 225%;
-		padding-left: 5em;
+		padding-left: 6.955em;
 	}
 
-	p {
-		padding-left: 5em;
-		width: 95%;
+	.intro-p, .p {
+		margin-left: 15.75em;
+		max-width: 27em;
 	}
 
 	.lrg-img {
 		display: inline;
-		margin-left: 9em;
+		margin-left: 4.75em;
 	}
 
-footer {
-	padding-left: 4.95em;
-}
+	footer {
+		padding-left: 15.65em;
+	}
 
 	.insta {
 		width: 4%;
@@ -284,3 +302,134 @@ footer {
 		width: 6%;
 	}
 }
+
+/* --------------------setting for lrg screen at 835px------------------------- */
+@media only screen and (min-width: 52em) {
+
+	h1 {
+		padding-left: .75em;
+	}
+
+	h2 {
+		padding-left: 10.95em;
+	}
+
+	.lrg-img {
+		max-width: 43em;
+		margin-left: 1.10em;
+	}
+
+	.p, .intro-p {
+		max-width: 20em;
+		margin-left: 24.75em;
+	}
+
+	footer {
+		padding-left: 24.65em;
+	}
+
+	.insta {
+		max-width: 9em;
+	}
+
+	.behance {
+		max-width: 13em;
+		margin-left: .75em;
+	}
+
+}
+
+/* --------------------setting for lrg screen at 960px------------------------- */
+@media only screen and (min-width: 60em) {
+
+	body {
+		margin: 1em 0 1em 0;
+	}
+
+	.h1-div {
+		position: absolute;
+		top: 150px;
+		left: 90px;
+	}
+
+	.hi-btn {
+		position: absolute;
+		top: 255px;
+		left: 220px;
+		border: #626262 solid;
+		max-width: 6em;
+		padding: .35em;
+		text-align: center;
+	}
+
+
+.lrg-img {
+	max-width: 62em;
+	margin: 0;
+}
+
+	h2 {
+		padding-left: 13.95em;
+	}
+
+	.p, .intro-p {
+		padding-left: 6.75em;
+		max-width: 33em;
+	}
+
+
+	footer {
+		padding-left: 31.65em;
+		padding-top: .95em;
+	}
+
+	.insta {
+		width: 6%;
+	}
+
+	.behance {
+		width: 10%;
+		margin-left: .60em;
+		}
+}
+
+
+/* --------------------setting for lrg screen at 992px------------------------- */
+@media only screen and (min-width: 62em) {
+
+	.lrg-img {
+		max-width: 65em;
+	}
+
+	.p, .intro-p {
+		max-width: 39em;
+	}
+
+	.insta {
+		width: 6%;
+	}
+
+	.behance {
+		width: 10%;
+	}
+
+/* --------------------setting for lrg screen at 1053px------------------------- */
+@media only screen and (min-width: 66em) {
+
+	.lrg-img {
+		max-width: 95em;
+	}
+
+	.p, .intro-p {
+		max-width: 45em;
+	}
+
+	.insta {
+		width: 5%;
+	}
+
+	.behance {
+		width: 8%;
+	}
+
+ }

@@ -9,7 +9,7 @@ html {
 	-moz-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-	text-size-adjust: 100%;
+	-text-size-adjust: 100%;
 
 	font-size: 100%;
 	font-family: Roboto,sans-serif;
@@ -40,7 +40,10 @@ h1 {
 	color: #2d282a;
 	font-weight: bold;
 	letter-spacing: 2px;
+}
 
+a {
+	text-decoration: none;
 }
 
 .hi-btn {
@@ -88,6 +91,13 @@ footer {
 
 .behance {
 	width: 20%;
+}
+
+.copyright {
+	padding-top: 1em;
+	margin: 0;
+	overflow: hidden;
+	color: #525252;
 }
 
 
@@ -308,7 +318,7 @@ footer {
 	.hi-btn:hover {
 		background-color: #f3eeef;
 	}
-
+}
 
 /* ------------------settings for medium screen at 765px------------------------- */
 
@@ -317,7 +327,7 @@ footer {
 	body {
 		margin-left: 8em;
 	}
-
+}
 
 /* --------------------setting for lrg screen at 800px------------------------- */
 @media only screen and (min-width: 50em) {
@@ -465,7 +475,7 @@ footer {
 	.p, .intro-p {
 		max-width: 39em;
 	}
-
+}
 
 /* --------------------setting for lrg screen at 1053px------------------------- */
 @media only screen and (min-width: 66em) {
@@ -479,3 +489,30 @@ footer {
 	}
 
  }
+
+
+@media print {
+
+	.hi-btn {
+		display: none;
+	}
+
+	.lrg-img {
+		display: none;
+	}
+
+	.sml-md-img {
+		display: inline;
+		width: 20%;
+		margin: 0;
+	}
+
+		.insta, .behance {
+		display: none;
+	}
+
+	footer {
+		padding: 0;
+	}
+
+}

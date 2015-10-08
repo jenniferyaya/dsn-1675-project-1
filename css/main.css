@@ -97,7 +97,7 @@ footer {
 	padding-top: 1em;
 	margin: 0;
 	overflow: hidden;
-	color: #525252;
+	color: #929292;
 }
 
 
@@ -509,7 +509,7 @@ footer {
 	}
 
 	.p, .intro-p {
-		max-width: 39em;
+		max-width: 35em;
 	}
 }
 
@@ -520,11 +520,25 @@ footer {
 		max-width: 95em;
 	}
 
-	.p, .intro-p {
-		max-width: 45em;
+	h2 {
+		padding-left: 19em;
 	}
 
+	.p, .intro-p {
+		padding-left: 18em;
+		max-width: 46em;
+	}
+
+	footer {
+		padding-left: 42.65em;
+	}
+
+
  }
+
+
+
+
 
 
 @media print {

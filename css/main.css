@@ -93,13 +93,16 @@ footer {
 	width: 20%;
 }
 
-.copyright {
+.copyright, .email {
 	padding-top: 1em;
 	margin: 0;
 	overflow: hidden;
 	color: #929292;
 }
 
+.phone {
+	display: none;
+}
 
 /* ---------------settings for sml at 400px-----------------*/
 @media only screen and (min-width: 25em) {
@@ -438,8 +441,6 @@ footer {
 		left: 635px;
 	}
 
-
-
 	footer {
 		padding-left: 24.65em;
 	}
@@ -533,12 +534,7 @@ footer {
 		padding-left: 42.65em;
 	}
 
-
  }
-
-
-
-
 
 
 @media print {
@@ -594,9 +590,13 @@ footer {
 		display: none;
 	}
 
-
 	.copyright {
 		display: none;
+}
+
+	.phone {
+		display: inline;
+	}
 
 	}
 	footer {
